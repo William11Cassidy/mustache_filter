@@ -1,0 +1,35 @@
+h3 {
+    font-size: 25px;
+}
+
+.btn-success:hover {
+    background-color: red;
+}
+
+canvas {
+    animation-name: rainbow;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        box-shadow: 1px 1px 30px red;
+    }
+
+    10% {
+        box-shadow: 1px 1px 30px orange;
+    }
+    20% {
+        box-shadow: 1px 1px 30px yellow;
+    }
+    30% {
+        box-shadow: 1px 1px 30px blue;
+    }
+    40% {
+        box-shadow: 1px 1px 30px green;
+    }
+    50% {
+        box-shadow: 1px 1px 30px purple;
+    }
+}
