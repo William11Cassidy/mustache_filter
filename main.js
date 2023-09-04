@@ -1,8 +1,9 @@
 function preload(){
-mustache=loadImage("mustache.avif")
+mustache=loadImage("download.png")
 
 }
-
+xnose=0
+ynose=0
 
 function   setup(){
 canvas = createCanvas(300, 300)
@@ -17,7 +18,8 @@ canvas = createCanvas(300, 300)
 
 
 function  draw(){
-image(mustache,50,50,100,70)
+image(video,0,0,300,300)
+image(mustache,xnose-65,ynose,130,70)
 }
 function takesnapshot(){
     save("mustachefilter.png")
@@ -33,5 +35,9 @@ function gotResult(result) {
 
         console.log(result);
         console.log("x= " + result[0].pose.nose.x + " \n y= " + result[0].pose.nose.y);
+        xnose=(result[0].pose.nose.x)
+        ynose=(result[0].pose.nose.y)
+
     }
+    
 }
